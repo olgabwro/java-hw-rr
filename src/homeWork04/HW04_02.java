@@ -1,8 +1,8 @@
-package hw04;
+package homeWork04;
 
 import java.util.Arrays;
 
-public class HW04_01 {
+public class HW04_02 {
     public static void main(String[] args) {
         /**
          * Задача №1. Дан массив:
@@ -18,12 +18,11 @@ public class HW04_01 {
             }
         }
 
-        /**
-         * Задача №2. Дан массив:
+        /* Задача №2. Дан массив:
          * int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
          * необходимо вывести все значения массива больше 5.
          */
-        System.out.println("\nTask2");
+        System.out.println("Task2");
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 5) {
@@ -31,28 +30,16 @@ public class HW04_01 {
             }
         }
 
-        /** Задача №3.Дан массив:
+        /* Задача №3.Дан массив:
          * int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
          * необходимо увеличить все значения массива на 15.
          */
 
-        System.out.println("\nTask3");
+        System.out.println("Task3");
 
         for (int i = 0; i < array.length; i++) {
-            array[i] += 15;
+            array[i] *= 15;
         }
         System.out.println(Arrays.toString(array));
-
-        /**
-         * Задача №4. Дан массив: int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
-         * необходимо вывести сумму всех значений массива.
-         */
-        System.out.println("\nTask4");
-        int sum = 0;
-
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
-        }
-        System.out.println("sum of array's elements = " + sum);
     }
 }
