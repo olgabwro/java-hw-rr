@@ -27,7 +27,7 @@ public class HW04_02 {
          * необходимо подсчитать количество букв “е” в строке.
          * Для указанной строки ответ будет 4.
          */
-        System.out.println("\nTask2");
+        System.out.println("\n\nTask2");
 
         String s2 = "Перевыборы выбранного президента";
         char litter2 = 'е';
@@ -47,7 +47,7 @@ public class HW04_02 {
          * необходимо вывести индексы начала всех подстрок - “рит”, независимо от регистра.
          * Для указанной строки ответ будет 6, 15, 29.
          */
-        System.out.println("\nTask3");
+        System.out.println("\n\nTask3");
 
         int countStrWithE = 0;
         int countStr = 0;
@@ -75,5 +75,18 @@ public class HW04_02 {
         * String[][] array = {{“Привет”, “всем”, “кто”}, {“изучает”, “язык”, “программирования”}, {“java”}};
         * необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
         */
+
+        System.out.println("\nExtraTask");
+
+        String sExtra = "Посмотрите как Рите нравится ритм";
+        sExtra = sExtra.toLowerCase();
+        String subStr = "рит";
+
+        System.out.print("Индексы начала подстрок “рит”:" );
+        for (int i = 0; i < sExtra.length() - 2; i++) {
+            if (subStr.equals("" + sExtra.charAt(i) + sExtra.charAt(i + 1) + sExtra.charAt(i + 2))) {
+                System.out.print("\t" + i);
+            }
+        }
     }
 }
