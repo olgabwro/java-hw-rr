@@ -18,7 +18,8 @@ public class HW04_01 {
             }
         }
 
-        /* Задача №2. Дан массив:
+        /**
+         * Задача №2. Дан массив:
          * int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
          * необходимо вывести все значения массива больше 5.
          */
@@ -30,7 +31,7 @@ public class HW04_01 {
             }
         }
 
-        /* Задача №3.Дан массив:
+        /** Задача №3.Дан массив:
          * int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
          * необходимо увеличить все значения массива на 15.
          */
@@ -41,5 +42,17 @@ public class HW04_01 {
             array[i] += 15;
         }
         System.out.println(Arrays.toString(array));
+
+        /**
+         * Задача №4. Дан массив: int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
+         * необходимо вывести сумму всех значений массива.
+         */
+        System.out.println("\nTask4");
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        System.out.println("sum of array's elements = " + sum);
     }
 }
