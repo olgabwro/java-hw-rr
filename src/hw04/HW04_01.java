@@ -1,8 +1,8 @@
-package homeWork04;
+package hw04;
 
 import java.util.Arrays;
 
-public class HW04_02 {
+public class HW04_01 {
     public static void main(String[] args) {
         /**
          * Задача №1. Дан массив:
