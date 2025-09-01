@@ -27,7 +27,7 @@ public class HW04_02 {
          * необходимо подсчитать количество букв “е” в строке.
          * Для указанной строки ответ будет 4.
          */
-        System.out.println("\n\nTask2");
+        System.out.println("\nTask2");
 
         String s2 = "Перевыборы выбранного президента";
         char litter2 = 'е';
@@ -47,12 +47,33 @@ public class HW04_02 {
          * необходимо вывести индексы начала всех подстрок - “рит”, независимо от регистра.
          * Для указанной строки ответ будет 6, 15, 29.
          */
+        System.out.println("\nTask3");
 
-         /**
-         * Экстра задача
-         * Дан массив:
-         * String[][] array = {{“Привет”, “всем”, “кто”}, {“изучает”, “язык”, “программирования”}, {“java”}};
-         * необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
-         */
+        int countStrWithE = 0;
+        int countStr = 0;
+        char letter3 = 'е';
+        String[][] array = {{"Привет", "всем", "кто"}, {"изучает", "язык", "программирования"}, {"java"}};
+
+        for (int i = 0; i < array.length; i++) {
+            countStr += array[i].length;
+            for (int j = 0; j < array[i].length; j++) {
+                for (int k = 0; k < array[i][j].length(); k++) {
+                    if (array[i][j].charAt(k) == letter3) {
+                        countStrWithE++;
+                        break;
+                    }
+                }
+            }
+        }
+        System.out.println(countStr);
+        System.out.println(countStrWithE);
+        System.out.println("количество строк в массиве, которые не содержат буквы “е”: " + (countStr - countStrWithE));
+
+        /**
+        * Экстра задача
+        * Дан массив:
+        * String[][] array = {{“Привет”, “всем”, “кто”}, {“изучает”, “язык”, “программирования”}, {“java”}};
+        * необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
+        */
     }
 }
