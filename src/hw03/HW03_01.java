@@ -1,6 +1,6 @@
 package hw03;
 
-public class HW03 {
+public class HW03_01 {
     public static void main(String[] args) {
         /* Задача №1.
         Необходимо создать две целочисленные переменные (a, b),
