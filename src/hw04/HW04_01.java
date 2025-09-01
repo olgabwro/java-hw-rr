@@ -22,7 +22,7 @@ public class HW04_01 {
          * int[] array = {9, 2, 6, 4, 5, 12, 7, 8, 6};
          * необходимо вывести все значения массива больше 5.
          */
-        System.out.println("Task2");
+        System.out.println("\nTask2");
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] > 5) {
@@ -35,10 +35,10 @@ public class HW04_01 {
          * необходимо увеличить все значения массива на 15.
          */
 
-        System.out.println("Task3");
+        System.out.println("\nTask3");
 
         for (int i = 0; i < array.length; i++) {
-            array[i] *= 15;
+            array[i] += 15;
         }
         System.out.println(Arrays.toString(array));
     }
